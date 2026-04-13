@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f7fffe;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 65px;
+    padding-top: 10px;
+    color: #000000;
+}
+
+.carrusel {
+    width: 87%;
+    height: 1500px;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: carrusel 20s infinite alternate ease-in-out;
+    
+}
+
+.carrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.texto {
+    position: absolute;
+    text-align: justify;
+    padding: 0 50px;
+    top: 75px; 
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.texto h2 {
+    text-align: justify;
+    font-size: 70px;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+.carrusel li img {
+    width: 100%;
+}
+@keyframes carrusel {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+.linea {
+    position: relative;
+    border: none;
+    top: 30px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, black, transparent);
+}
+.textoprincipal {
+    text-align: justify;
+    padding: 0 50px;
+    font-size: 35px;
+    color: #000000;
+    position: relative;
+    top: 100px;
+}
