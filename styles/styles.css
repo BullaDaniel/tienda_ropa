@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f7fffe;
+}
+
+.barraNavegacion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 40px;
+  background: #1C085E;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.barraNavegacion .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.barraNavegacion .nav-centro {
+  display: flex;
+  gap: 25px;
+}
+.barraNavegacion .nav-centro a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.barraNavegacion .nav-centro a:hover {
+  color: #ff4d4d;
+}
+.barraNavegacion .nav-derecha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.barraNavegacion .nav-derecha .buscador {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+.barraNavegacion .nav-derecha button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.barraNavegacion .nav-derecha span {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 65px;
+  padding-top: 10px;
+  color: #000000;
+}
+
+.carrusel {
+  width: 87%;
+  height: 1500px;
+  margin: 100px auto 0;
+  overflow: hidden;
+}
+.carrusel ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: carrusel 20s infinite alternate ease-in-out;
+}
+.carrusel li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+.carrusel li img {
+  width: 100%;
+}
+
+.texto {
+  position: absolute;
+  text-align: justify;
+  padding: 0 50px;
+  top: 75px;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.texto h2 {
+  text-align: justify;
+  font-size: 70px;
+  margin-bottom: 45px;
+  color: #ffffff;
+}
+
+@keyframes carrusel {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.linea {
+  position: relative;
+  border: none;
+  top: 30px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, black, transparent);
+}
+
+.textoprincipal {
+  text-align: justify;
+  padding: 0 50px;
+  font-size: 35px;
+  color: #000000;
+  position: relative;
+  top: 100px;
+}/*# sourceMappingURL=styles.css.map */
