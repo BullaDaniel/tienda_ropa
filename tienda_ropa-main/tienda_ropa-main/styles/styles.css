@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f7fffe;
+}
+
+.barraNavegacion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 40px;
+  background: #365388;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.barraNavegacion .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.barraNavegacion .nav-centro {
+  display: flex;
+  gap: 25px;
+}
+.barraNavegacion .nav-centro a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.barraNavegacion .nav-centro a:hover {
+  color: #ff4d4d;
+}
+.barraNavegacion .nav-derecha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.barraNavegacion .nav-derecha .buscador {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+.barraNavegacion .nav-derecha button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.barraNavegacion .nav-derecha span {
+  cursor: pointer;
+  font-size: 18px;
+}
+.container_imagen_principal{
+    position: relative;
+    display: flex;
+    width: auto;
+}
+
+.container_imagen_principal img{
+    width: 100%;
+}
+.container_imagen_principal h2{
+    position: absolute;
+    font-size: 3.7vw;
+    font-family: "Tangerine", cursive;
+    top: 50%;
+    left: 65%;
+    margin-right: 7.5vw;
+    color: #ffffff;
+}
+.container_imagen_principal button{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    padding: 15px 30px;
+    font-size: 1.5vw;
+    background-color: #365388;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container_imagen_principal button:hover{
+    background-color: #a5b4cf;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.container_separador{
+    background-color: #a5b4cf;
+    margin-top: 5vw;
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+.container_separador h2{
+  text-align: center;
+    display: flex;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #000000;
+    padding: 20px 40px;
+}
+.container_productos_destacados{
+    margin: 2vw 5.4vw 2vw 5.4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4vw;
+    row-gap: 4vw;
+    width: 90%;
+    text-align: center;
+}
+.container_producto{
+    background-color: #365388;
+    width: 30%;
+}
+.container_productos_destacados img{
+    width: 100%;
+    height: 30vw;
+    border-radius: 10px;
+    margin-bottom: 1.5svw;
+}
+.container_productos_destacados img:hover{
+    transform: scale(1.07);
+    transition: all 0.3s ease-in-out;
+}
+
+.container_productos_destacados h2{
+    font-size: 3vw;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.carrusel {
+  height: 20vw;
+  width: 100%;
+  margin: 100px auto 0;
+  overflow: hidden;
+}
+.carrusel ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: carrusel 30s infinite alternate ease-in-out;
+}
+.carrusel li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+.carrusel li img {
+  width: 100%;
+  height:50vw;
+}
+
+.texto {
+  position: absolute;
+  text-align: justify;
+  padding: 0 5vw;
+  top: 5vw;
+  font-size: 2vw;
+  color: #ffffff;
+}
+
+.texto h2 {
+  text-align: justify;
+  font-size: 4vw;
+  margin-bottom: 5vw;
+  color: #ffffff;
+}
+
+@keyframes carrusel {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.container_final {
+  margin: 2vw 5.4vw 0vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+  background-color: #365388;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+.container_final h2 {
+  font-size: 3vw;
+  color: #000000;
+}
+.container_final_informacion {
+  border-radius: 10px;
+  margin: 1vw 3.4vw 1vw 3.4vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: justify;
+  padding-bottom: 3vw;
+}
+.container_final_informacion p {
+  padding: 5vw 5vw 0 5vw;
+  font-size: 1.5vw;
+  color: #000000;
+}
+.container_final_informacion li {
+  list-style: none;
+  padding: 0 5vw;
+  font-size: 1.5vw;
+  color: #000000;
+}
+/*# sourceMappingURL=styles.css.map */
