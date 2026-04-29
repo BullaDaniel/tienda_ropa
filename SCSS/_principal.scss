@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #eeeeee;
+}
 .container_imagen_principal{
-  position:relative;
+  position:relative;  
   display:flex;
   width:auto;
 
@@ -24,7 +34,7 @@
     padding:15px 30px;
     font-size:1.5vw;
     background-color:#365388;
-    color:#fff;
+    color:#ffffff;
     border-radius:5px;
     cursor:pointer;
 
@@ -35,6 +45,23 @@
   }
 }
 
+.separador_categorias{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  width:100%;
+  height: 30vw;
+  margin-top:10vw;
+
+  img{
+    width:100%;
+    height: 23vw;
+    &:hover{
+      transform:scale(1.05);
+      transition:all .3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
 
 .separador_oferta{
   h2{
@@ -42,58 +69,67 @@
     width:100%;
     border-radius:10px;
     text-align:center;
-    margin-top:5vw;
-    padding:20px 40px;
+    padding:20px 20px;
     font-size:2.5vw;
-    background:linear-gradient(to right,#a5b4cf,#fff);
   }
 }
-
 
 .container_promociones{
   display:flex;
   width:100%;
-  height:20vw;
+  height:30vw;
   margin-bottom:7vw;
-
-  .card{
-    margin:1vw 0 1vw 2vw;
-    display:flex;
-    flex-direction:column;
-    background:#ddd;
-        width:20vw;
-        height:20vw;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
     img{
       width:100%;
-      height:100%;
-      border-radius:10px;
+      height: 65%;
+      border-radius:8px;
+    &:hover{
+      cursor: pointer;
+      transform:scale(1.03);
+      transition:all .3s ease-in-out;
+      }
     }
 
     h2{
+      width:100%;
+      display:flex;
+      margin-top:1.5vw;
+      margin-bottom: 1vw;
       text-align:center;
       display:block;
       font-size:2vw;
     }
-
-    button{
-      background:#a5b4cf;
-      color:#fff;
-      border-radius:5px;
-      cursor:pointer;
-
-      &:hover{
-        background:#cfd5e0;
-        transition:all .3s ease-in-out;
-      }
-    }
+    h4{
+    margin:0.2vw 1.2vw;
+    font-size: 1.8vw;
+    color: rgb(93, 93, 93);
+    text-decoration: line-through;
+    text-decoration-color: red;
   }
+  h5{
+    font-size: 1.8vw;
+    margin:0.3vw 1.2vw;
+  }
+  }
+.card{
+   margin:1vw 0 1vw 1.5vw;
+    display:flex;
+    padding: 0vw;
+    border-radius: 10px;
+    border: rgb(182, 182, 182) solid 1px;
+    flex-direction:column;
+    background:#ffffff;
+    width:22vw;
+    height:33vw;
+    overflow: hidden;
+    &:hover{
+      transform:scale(1.07);
+      transition:all .3s ease-in-out;
+    }
 }
 
-
 .container_separador{
-  background:linear-gradient(to right,#a5b4cf,#fff);
   margin-top:5vw;
   display:flex;
   border-radius:10px;
@@ -106,7 +142,7 @@
     text-align:center;
     font-size:2.5vw;
     color:#000;
-    padding:20px 40px;
+    padding:20px 20px;
   }
 }
 
@@ -115,7 +151,7 @@
   margin:2vw 5.4vw;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
-  column-gap:4vw;
+  column-gap:2vw;
   row-gap:4vw;
   width:90%;
   text-align:center;
@@ -127,22 +163,43 @@
     margin-bottom:1.5vw;
 
     &:hover{
+      cursor: pointer;
       transform:scale(1.07);
       transition:all .3s ease-in-out;
     }
   }
 
-  h2{
-    font-size:3vw;
+  h3{
+    font-size:2.5vw;
     color:#000;
     margin-bottom:20px;
   }
+  h4{
+    font-size: 1.8vw;
+    margin:7px;
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+  h5{
+    font-size: 1.8vw;
+    margin-bottom:10px;
+  }
+  p{
+    font-size: 2vw;
+    padding: 0.4vw;
+  }
 }
 
-
-.container_producto{
-  background-color:#365388;
-  width:30%;
+.producto{
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px, solid rgb(182, 182, 182);
+  background-color: #fff;
+  &:hover{
+    transform:scale(1.05);
+    transition:all .3s ease-in-out;
+    cursor: pointer;
+  }
 }
 
 
